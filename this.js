@@ -1,10 +1,10 @@
+//* Implicit binding 
 const person = {
     name : "Mauricio",
     sayMyName: function(){
         console.log(`My name is ${this.name}`);
     }
 }
-//* Implicit binding 
 person.sayMyName()
 
 //* Explicit binding 
@@ -23,4 +23,8 @@ const p1 = new Person('Vishwas')
 const p2 = new Person('Batman')
 
 console.log(p1.name, p2.name);
-//* Default binding 
+
+//* Default binding, if javascript don't find any of the other roules him find in the global scope, in this case how name
+//* not exist in the global scoope, the result of the function is My name is undefined
+
+saymyName()
